@@ -1,9 +1,5 @@
 #!../.venv/Scripts/python
 
-# import os
-# from dotenv import load_dotenv
-# from confluent_kafka import Consumer
-
 import os
 import cv2
 import base64

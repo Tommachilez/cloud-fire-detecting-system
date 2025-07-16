@@ -1,10 +1,5 @@
 #!../.venv/Scripts/python
 
-# import os
-# from random import choice
-# from dotenv import load_dotenv
-# from confluent_kafka import Producer
-
 import os
 import sys
 import cv2
@@ -74,7 +69,7 @@ if __name__ == '__main__':
                 callback=delivery_callback
             )
             producer.poll(0)
-            # time.sleep(0.05) # Control frame rate
+            time.sleep(0.05) # Control frame rate
 
     except KeyboardInterrupt:
         print("Interrupted by user")
